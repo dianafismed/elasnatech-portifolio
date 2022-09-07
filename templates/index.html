@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+{% block title %}{% endblock title %}
+{% block content %}
+<section id="principal" class="container">
+  <div id="profile" class="profile">
+    <img class="img-fluid text-center" src="{{ url_for('static', filename='img/me.jpg') }}" alt="Foto do perfil">
+    <div>
+      <h1>Diana Avila</h1>
+      <h3>Analista e Desenvolvedora de Sistemas</h3>  
+      <div id="medias" class="medias">
+        <a class="fa fa-facebook" href="#"></a>
+        <a class="fa fa-whatsapp" href="#"></a>
+        <a class="fa fa-instagram" href="#"></a>
+        <a class="fa fa-linkedin" href="#"></a>
+        <a class="fa fa-github" href="#"></a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="project" class="container-fluid">
+  <h2 class="text-center">Projetos</h2>
+  <div class="row">
+    <div id="elas" class="project container col-md-3">
+      <h3>ElasNaTech</h3>
+      <ul>
+        <li><a href="">Something</a></li>
+        <li><a href="">Something</a></li>
+        <li><a href="">Something</a></li>
+      </ul>
+    </div>
+    <div id="santander" class="project container col-md-3">
+      <h3>Santander </h3>
+      <ul>
+        <li><a href="">Something</a></li>
+        <li><a href="">Something</a></li>
+        <li><a href="">Something</a></li>
+      </ul>
+    </div>
+    <div id="alura" class="project container col-md-3">
+      <h3>Imersão Alura</h3>
+      <ul>
+        <li><a href="">Something</a></li>
+        <li><a href="">Something</a></li>
+        <li><a href="">Something</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section id="other-projects" class="container-fluid">
+  <h2>Outros Projetos</h2>
+  <ul>
+    <li><a href="">Something</a></li>
+    <li><a href="">Something</a></li>
+    <li><a href="">Something</a></li>
+  </ul>
+</section>
+  
+  
+  
+  
+  <!-- 
+  <div id="profile" class="profile col-lg-5 col-md-12 container ">
+    <img class="img-fluid text-center" src="{{ url_for('static', filename='img/me.jpg') }}" alt="Foto do perfil">
+    <div class="text-center">
+      <h1>Diana Avila</h1>
+      <h3>Analista e Desenvolvedora de Sistemas</h3>  
+      <div id="medias" class="medias">
+        <a class="fa fa-facebook" href="#"></a>
+        <a class="fa fa-whatsapp" href="#"></a>
+        <a class="fa fa-instagram" href="#"></a>
+        <a class="fa fa-linkedin" href="#"></a>
+        <a class="fa fa-github" href="#"></a>
+      </div>
+    </div>
+  </div>
+  <div id="works" class="works mx-auto col-lg-5 col-md-12">
+    <h2 class="p-3">Projetos</h2>
+    <ul>
+      <li><a href="https://github.com/dianafismed/Bot-do-Cats" target="_blank">Bot do Cat's</a></li>
+      <li><a href="" target="_blank">Cat's</a></li>  
+      <li><a href="https://dianafismed.github.io/Isas.github.io/" target="_blank">Isa's Doces e Bolos</a></li>
+      <li><a href="https://dianafismed.github.io/pelaslentesdadeia/" target="_blank">Pelas Lentes da Deia</a></li>
+      <br>
+      <li><a href="https://dianafismed.github.io/pson-estudo_boostrap.github.io/" target="_blank">Estudo Boostrap</a></li> 
+      <li><a href="https://dianafismed.github.io/pson-estudo_js.github.io/" target="_blank">Estudo Java Script</a></li>
+    </ul>
+  </div>
+</section>
+<section id="imer" class="works row mx-auto mt-5">
+      <h2 class="p-3">Imersões</h2>
+      <div class="imer mx-auto col-lg-3 col-md-5 col-sm-6 pt-3">
+        <h3>ElasNaTech</h3>
+        <ul class="pt-3">
+          <li><a href="https://github.com/dianafismed/Bot-do-Cats" target="_blank">Bot do Cat's</a></li>
+          <li><a href="" target="_blank">Cat's</a></li>  
+          <li><a href="https://dianafismed.github.io/Isas.github.io/" target="_blank">Isa's Doces e Bolos</a></li>
+          <li><a href="https://dianafismed.github.io/pelaslentesdadeia/" target="_blank">Pelas Lentes da Deia</a></li>
+          <br>
+          <li><a href="https://dianafismed.github.io/pson-estudo_boostrap.github.io/" target="_blank">Estudo Boostrap</a></li> 
+          <li><a href="https://dianafismed.github.io/pson-estudo_js.github.io/" target="_blank">Estudo Java Script</a></li>
+        </ul>
+      </div>
+      <div class="imer mx-auto col-lg-3 col-md-5 col-sm-6 pt-3">
+        <h3>Santander</h3>
+        <ul class="pt-3">
+          <li><a href="https://github.com/dianafismed/Bot-do-Cats" target="_blank">Bot do Cat's</a></li>
+          <li><a href="" target="_blank">Cat's</a></li>  
+          <li><a href="https://dianafismed.github.io/Isas.github.io/" target="_blank">Isa's Doces e Bolos</a></li>
+          <li><a href="https://dianafismed.github.io/pelaslentesdadeia/" target="_blank">Pelas Lentes da Deia</a></li>
+          <br>
+          <li><a href="https://dianafismed.github.io/pson-estudo_boostrap.github.io/" target="_blank">Estudo Boostrap</a></li> 
+          <li><a href="https://dianafismed.github.io/pson-estudo_js.github.io/" target="_blank">Estudo Java Script</a></li>
+        </ul>
+      </div>
+      <div class="imer mx-auto col-lg-3 col-md-5 col-sm-6 pt-3">
+        <h3>ElasNaTech</h3>
+        <ul class="pt-3">
+          <li><a href="https://github.com/dianafismed/Bot-do-Cats" target="_blank">Bot do Cat's</a></li>
+          <li><a href="" target="_blank">Cat's</a></li>  
+          <li><a href="https://dianafismed.github.io/Isas.github.io/" target="_blank">Isa's Doces e Bolos</a></li>
+          <li><a href="https://dianafismed.github.io/pelaslentesdadeia/" target="_blank">Pelas Lentes da Deia</a></li>
+          <br>
+          <li><a href="https://dianafismed.github.io/pson-estudo_boostrap.github.io/" target="_blank">Estudo Boostrap</a></li> 
+          <li><a href="https://dianafismed.github.io/pson-estudo_js.github.io/" target="_blank">Estudo Java Script</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section-->
+
+{% endblock content %}

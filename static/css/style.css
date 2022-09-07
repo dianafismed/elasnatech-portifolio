@@ -1,0 +1,226 @@
+/*            FONTS           */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm&display=swap');
+
+
+/*              MAIN STYLES            */
+.light-theme {
+  --back-color: #080808;
+  --body-color: rgb(224, 222, 222);
+  --primary-color: #D5CCD5;
+  --secondary-color: #590359;
+  --border-color: rgb(167, 10, 167);
+  --letter-color: rgb(114, 23, 116);
+  --hover-color: #D154D1;
+  --write-color: #A140A1;
+}
+
+.dark-theme {
+  --body-color: #000;
+  --primary-color: rgb(19, 1, 19);
+  --secondary-color: rgb(122, 88, 136);
+  --border-color: rgb(197, 74, 197);
+  --letter-color: rgb(240, 188, 247);
+  --hover-color: rgb(238, 172, 238);
+  --write-color: #ffccff;
+}
+
+/*              GENERIC STYLES            */
+body{
+  background-color: var(--body-color);
+  margin: auto;
+  border: 5px solid black;
+}
+
+/*              NAVBAR            */
+#nav-toggle{
+  justify-content: right;
+  padding-right: 20px;
+}
+#nav-toggle a{
+  color: white;
+}
+#nav-toggle a:hover{
+  color: rgb(238, 172, 238);
+}
+
+/*              CHANGE-THEME            */
+#change{
+  margin-top: 55px;
+  padding-right: 2%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+#btn-change-theme{
+  background-color: var(--primary-color);
+  color: var(--letter-color);
+  font-family: 'Charm';
+  letter-spacing: 2px;
+}
+header button:hover{
+  color: var(--hover-color);
+}
+
+/*      SECTION INDEX       */
+
+/*        PROFILE       */
+.profile{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: 'Charm';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.profile img{
+  height: 300px;
+  border: 10px double var(--secondary-color);
+  border-radius: 25px;
+  margin: 20px; 
+}
+.profile h1, .profile h3{
+  color: var(--letter-color);
+  font-weight: bold;
+}
+.profile h1, .profile h3, #medias{
+  margin-left: 25px;
+}
+#medias a{
+  font-size: 20px;
+  margin: 10px 20px 0 0;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+#medias a:hover{
+  color: var(--hover-color);
+}
+
+/*      PROJECTS     */
+#project{
+  background-color: var(--primary-color);
+  height: 400px;
+  margin-top: 70px;
+}
+#project h2, #project h3{
+  color: var(--letter-color);
+  font-family: 'Charm';
+  font-size: 40px;
+  padding: 20px;
+}
+.project{
+  color: var(--secondary-color);
+  line-height: 30px;
+  box-sizing: border-box;
+  border: 1px solid var(--border-color);
+  border-radius: 10px 20px 5px 25px;
+  padding-bottom: 20px;
+  margin-top: 10px;
+}
+.project li{
+  list-style-type: none;
+}
+.project a{
+  color: var(--write-color);
+  font-size: 20px;
+  text-decoration: none;
+}
+.project h3::before{
+  content: '';
+  position: relative;
+  top: -20px;
+  background-color: var(--border-color);
+  border: 1px solid var(--border-color);
+  margin: 10px;
+  padding: 5px;
+}
+
+/*      OTHER PROJECTS     */
+#other-project{
+  background-color: var(--primary-color);
+}
+
+.works h3::before, .works h3::after{
+  content: '';
+  border: 1px solid var(--secondary-color);
+  position: relative;
+  margin: 10px;
+  transform: rotate(60deg);
+  z-index: -1;
+}
+
+.works h2, .works h3{
+  color: var(--letter-color);
+  font-family: 'Charm';
+  font-weight: bold;
+}
+
+.works li a{
+  color: var(--write-color);
+  text-decoration: none;
+}
+
+.works li a:hover{
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.imer{
+  border: 3px double var(--secondary-color);
+  border-radius:  10px 20px 5px 50px;
+  margin: 5px;
+  padding: 10px;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 50px;
+}
+
+footer a{
+  font-size: 30px;
+  text-decoration: none;
+  margin: 0px 10px;
+  color: var(--secondary-color);
+}
+
+footer a:hover{
+  color: var(--hover-color);
+}
+
+
+
+/*transition: 1s*/
+
+@media (max-width: 798px) {
+  .profile{
+    background-color: var(--back-color);
+    display: flex;
+    flex-direction: column;   
+    margin-top: 100px;
+
+  }
+  #btn-change-theme{
+    display: none;
+  }
+
+  #project{
+    margin-top: 150px;
+  }
+  #project h2{
+    font-size: 30px;
+  }
+  #project h3{
+    font-size: 20px;
+  }
+  .project{
+    margin: 10px;
+  }
+}
